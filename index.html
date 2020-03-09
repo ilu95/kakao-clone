@@ -10,23 +10,24 @@
 </head>
 
 <body>
-  <div class="status-bar"></div>
-  <div class="stauts-bar__column">
-    <span class="stauts-bar__clock">13:54</span>
+  <div class="status-bar">
+  <div class="status-bar__column">
+    <span class="status-bar__clock">13:54</span>
   </div>
-  <div class="stauts-bar__column">
+  <div class="status-bar__column">
     <i class="fas fa-clock"></i>
     <i class="fas fa-volume-mute"></i>
     <i class="fas fa-wifi"></i>
     <span class="status-bar__battery-level">100%</span>
     <i class="fas fa-battery-full"></i>
   </div>
-  <header calss="header">
+  </div>
+  <header class="header">
     <div class="header__header-column">
-      <h1 class="title">Chats</h1>
+      <h1 class="header__title">Chats</h1>
     </div>
     <div class="header__header-column">
-      <span clas="header__icon">
+      <span class="header__icon">
         <i class="fas fa-search"></i>
       </span>
       <span class="header__icon">
@@ -36,24 +37,29 @@
         <i class="fas fa-cog"></i>
       </span>
     </div>
-    <div class="header__header-column"></div>
   </header>
   <main class="chats">
     <ul class="chats__list">
       <li class="chats__chat chat">
         <a href="chat.html">
-          <div class="chat__column">
-            <div class="chat__content">
-              <img class="chat__avatar g-avatar" src="D:\Program Files\study\img\img1.jpg"><br></img>
-              <span class="chat__username">
-                Juyoung
-              </span>
-              <span class="chat__preview">want to go Home!</span>
+          <div class="chats__chat friend friend--lg">
+            <div class="friend__column">
+            <img src="D:\Program Files\study\img\img1.jpg" class="m-avatar friend__avatar"/>
+             <div class="friend__content">
+                  <span class="friend__name">
+                    Ho yong
+                  </span>
+                  <span class="friend__bottom-text">
+                    Going home!
+                  </span>
+                </div>
+              </div>
+              <div class="friend__column">
+                <span class="chat__timestamp">
+                  March 8
+                </span>
+              </div>
             </div>
-          </div>
-          <div class="chat__column">
-            <span class="chat__timestamp">Yesterday</span>
-          </div>
         </a>
       </li>
     </ul>
@@ -67,6 +73,7 @@
       </li>
       <li class="nav__list-item">
         <a href="index.html" class="nav__list-link">
+          <div class= "nav__badge">8</div>
           <i class="fas fa-comment""></i>
           </a>
         </li>
